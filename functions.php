@@ -61,3 +61,29 @@ function custom_acf_load_json( array $directories ) {
 	return $directories;
 }
 add_filter('acf/settings/load_json', 'custom_acf_load_json');
+
+
+/* register acf custom blocks */
+function custom_acf_init_blocks() {
+    if( function_exists('acf_register_block_type') ) {
+        acf_register_block_type(array(
+            'name'              =>  'airfleet',
+            'title'             =>  __('AirFleet'),
+            'description'       =>  __('A custom block to display different layout.'),
+            'render_callback'   =>  'airfleet_block_callback',  // callback function in custom-blocks/block_name/index.php
+            'align'             =>  'full',
+            'icon'              =>  'airplane',
+            'keywords'          =>  array('airfleet'),
+            'supports'          =>  array(
+                'align'     => true,
+                'align_text' => true,
+                'align_content' => true
+            ),
+            'enqueue_style'  =>  TEHEME_BLOCKS_URI . '/main.css', // css file
+            'enqueue_script' =>  TEHEME_BLOCKS_URI . '/airfleet/block.min.js' // javascript file
+        ));
+
+        // add more new blocks here...
+    }
+}
+add_action('acf/init', 'custom_acf_init_blocks');
