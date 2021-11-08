@@ -16,6 +16,10 @@ function enqueue_parent_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
+/* load Gutenberg editor custom stylesheet */
+add_theme_support('editor-styles');
+add_editor_style( 'editor-style.css' ); 
+
 
 /* load all php files in custom-blocks folder */
 function custom_load_block_callback() {
