@@ -79,18 +79,19 @@ function airfleet_block_callback( $block, $content = '', $is_preview = false, $p
                     </a>
                 <?php endif; ?>
             </div>
-            <!-- /.airfleet-block-content -->
+            <!-- /.afb-content -->
         </div>
-        
+        <!-- /.afb-col-1 -->
         <div class="afb-col-2">
             <div class="afb-image">
                 <?php if( !empty( $image ) ): ?>
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                 <?php endif; ?>
             </div>
-            <!-- /.airfleet-block-image -->
+            <!-- /.afb-image -->
         </div>
+        <!-- /.afb-col-2 -->
     </div>
-    <!-- /.airfleet-block -->
+    <!-- /.afb-row -->
 </section>   
 <?php } ?>

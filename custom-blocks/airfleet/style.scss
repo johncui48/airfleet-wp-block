@@ -1,9 +1,11 @@
 $afb-row-padding: 47px;
 $afb-col-padding: 37px;
-$abf-content-min-width: 463px;
-$abf-font-family: 'Roboto Condensed', sans-serif;
-$abf-bg-color-01: #00FFFF;
-$abf-bg-color-02: #6455FF;
+$afb-col-max-width: 540px;
+$afb-content-lg-min-width: 463px;
+$afb-content-sm-min-width: 288px;
+$afb-font-family: 'Roboto Condensed', sans-serif;
+$afb-bg-color-01: #00FFFF;
+$afb-bg-color-02: #6455FF;
 
 @media only screen and (min-width: 1024px) {
     .afb-row {
@@ -25,7 +27,7 @@ $abf-bg-color-02: #6455FF;
     }
 
     .afb-content {
-        width: $abf-content-min-width;
+        width: $afb-content-lg-min-width;
         margin-left: auto; 
         margin-right: 0;
 
@@ -36,11 +38,10 @@ $abf-bg-color-02: #6455FF;
             max-width: 342px;
         }
 
-        .body-text, .readmore-text{
+        .body-text, .readmore-text {
             font-size: 16px;
             line-height: 19px;
             margin-bottom: 20px;
-            max-width: 463px;
         }
 
         .readmore-text {
@@ -48,8 +49,8 @@ $abf-bg-color-02: #6455FF;
         }
 
         .readmore-btn {
-            font-family: $abf-font-family;
-            color: $abf-bg-color-02;
+            font-family: $afb-font-family;
+            color: $afb-bg-color-02;
             cursor: pointer;
             font-weight: 700;
             text-decoration-line: underline;
@@ -59,12 +60,11 @@ $abf-bg-color-02: #6455FF;
             font-weight: 600;
             padding: 8.5px 10px;
             max-width: 138px;
-            width: 100%;
         }
     }
 
     .afb-image {
-        width: $abf-content-min-width;
+        width: $afb-content-lg-min-width;
     }
 
     .img-align-left {
@@ -100,12 +100,12 @@ $abf-bg-color-02: #6455FF;
     .afb-col-1, .afb-col-2 {
         width: 100%;
         margin: 0 auto;
-        max-width: 540px;
+        max-width: $afb-col-max-width;
     }
 
-    .afb-content, .abf-image {
+    .afb-content, .afb-image {
         width: 100%;
-        min-width: 288px;
+        min-width: $afb-content-sm-min-width;
     }
 
     .afb-content {
@@ -149,7 +149,7 @@ $abf-bg-color-02: #6455FF;
 .afb-content {
     h2 {
         color: #0E0066;
-        font-family: $abf-font-family;
+        font-family: $afb-font-family;
         font-style: normal;
         font-weight: 400;
     }
@@ -162,9 +162,9 @@ $abf-bg-color-02: #6455FF;
     }
 
     .link-btn { 
-        background-color: $abf-bg-color-01;
+        background-color: $afb-bg-color-01;
         color: #0B0058;
-        font-family: $abf-font-family;
+        font-family: $afb-font-family;
         text-align: center;
         text-decoration: none;
         display: block;
@@ -178,13 +178,13 @@ $abf-bg-color-02: #6455FF;
 }
 
 .img-align-left {
-    background: linear-gradient(135deg, $abf-bg-color-01 0%, $abf-bg-color-02 100%);
+    background: linear-gradient(135deg, $afb-bg-color-01 0%, $afb-bg-color-02 100%);
     
     *{
         color: white !important;
     }
     .link-btn {
-        background-color: $abf-bg-color-02;
+        background-color: $afb-bg-color-02;
     }
 }
 
