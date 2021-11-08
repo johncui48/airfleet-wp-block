@@ -7,6 +7,8 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11159,7 +11161,6 @@ textarea.form-control-lg {
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 20px;
-    max-width: 463px;
   }
   .afb-content .readmore-text {
     display: none;
@@ -11172,10 +11173,10 @@ textarea.form-control-lg {
     text-decoration-line: underline;
   }
   .afb-content .link-btn {
+    font-size: 16px;
     font-weight: 600;
     padding: 8.5px 10px;
     max-width: 138px;
-    width: 100%;
   }
 
   .afb-image {
@@ -11212,7 +11213,7 @@ textarea.form-control-lg {
     max-width: 540px;
   }
 
-  .afb-content, .abf-image {
+  .afb-content, .afb-image {
     width: 100%;
     min-width: 288px;
   }
