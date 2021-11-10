@@ -40,5 +40,10 @@ $ cd .
 $ npm install
 ```
 
+## Add More..
+It is not good practice to create an individual plugin for each one custom block as same as most online cases.
+You can use this as a boilerplate or starter theme to build a powerful custom theme that includes many useful custom blocks.
+
+To create a new block:
 * In functions.php, register a new block name under custom_acf_init_blocks() function.
 * In custom-blocks folder, create a new folder with block name and add files (php for callback or template, javascript, scss for stylesheet, json for acf custom fields group)
