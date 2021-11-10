@@ -30,6 +30,8 @@ Used:
 * Upload this theme file and Install/Activate on WordPress admin dashboard.
 * Use block in Gutenberg editor.
 
+![Block Item](block.png "Block Item")
+
 ## Development
 
 ```bash
